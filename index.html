@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Website</title>
+    <title>Welcome to our website!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
@@ -12,96 +12,219 @@
             padding: 0;
         }
         body {
-            margin: 1cm;
+            background-repeat:no-repeat;
             font-family: Arial, Helvetica, sans-serif;
-        }
-        h1 {
-            color: #555;
-        }
-        .content-container {
             display: grid;
         }
-        .content-container h1 {
-            font-size:25px;
+        body h1,p {
+            text-align: center;
         }
-        
+        .container {
+            display: flex;
+        }
         header {
-            margin-bottom: 2cm;
+            max-width:50cm;
+            display:grid;
+            background-color: #333;
+            grid-auto-flow: column;
+            color: aliceblue;
         }
-        header hr {
-            height: 0.1cm;
-            width: 1cm;
-            background-color: #fcc152;
-            border: none;
+        header .web-logo img {
+            float: left;
+            border: 3px solid pink;
+            border-radius: 50px;
         }
-        .contact_info {
-            width: 8cm;
-        }
-        .contact_info ul li {
-            color: grey;
-            list-style-type: none;
-            margin-bottom: 1cm;
-        }
-        .user-info {
-            display: grid;
-            max-width: 16cm;
-        }
-        .user-info ul li {
+        header .menu ul {
+            grid-auto-flow: column;
             display: grid;
             list-style-type: none;
-            margin-bottom: 0.2cm;
-            border-color: lightslategrey;
         }
-        .user-info ul li #user_name,#user_email,#subject {
-            height: 1cm;
-            max-width: 16cm;
+        header .social-networks ul {
+            display: grid;
+            list-style-type: none;
+            grid-auto-flow: column;
         }
-        #submit_button {
-            width: 2cm;
-            height: 1cm;
-            background-color: green;
-            border: none;
-            color: white;
+        section {
+            flex: 5;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 20cm;
+            display: grid;
         }
-        #submit_button:hover {
-            background-color: lightgreen;
+        .info {
+            flex: 5;
+            display:grid;
+            grid-template-columns:auto;
+        }
+        .info .khanh-info {
+            background-size:auto;
+            width: fit-content;
+            margin: 1cm;
+            display: flex;
+        }
+        .info .khanh-info .khanh-basic-info {
+            background-color: antiquewhite;
+            text-align: center;
+            border-radius: 80px;
+        }
+        .info .khanh-info .khanh-basic-info {
+            flex: 2;
+        }
+        .info .khanh-info .khanh-introduction {
+            flex: 3;
+            margin-left: 1cm;
+            margin-top: 2cm;
+        }
+        .info .khanh-info .khanh-introduction pre {
+            background-color:lightpink;
+            border-radius: 20px;
+            font-size: larger;
+            font-style: oblique;
+        }
+        .info .han-info {
+            background-size:auto;
+            width: fit-content;
+            margin: 1cm;
+            display: flex;
+        }
+        .info .han-info .han-basic-info {
+            background-color: antiquewhite;
+            border-radius: 80px;
+        }
+        .info .han-info .han-basic-info pre {
+            flex: 2;
+            text-align: center;
+        }
+        .info .han-info .han-introduction {
+            flex: 3;
+            margin-left: 1cm;
+        }
+        .info .han-info .han-introduction pre {
+            margin-top: 2cm;
+            background-color: lightpink;
+            border-radius: 20px;
+            width: 15cm;
+            height: 6cm;
+            font-size: larger;
+            font-style: oblique;
+        }
+        aside {
+            flex: 2;
+            float: right;
+            margin-left: 0;
+            background-color: #222;
+            color: aliceblue;
+            border-radius: 20px;
+        }
+        aside h2 {
+            text-align: center;
+        }
+        aside ul {
+            list-style-type: none;
+            display: grid;
+        }
+        aside ul li {
+            margin: 0.3cm;
+        }
+        a {
+            text-decoration: none;
+            color: aliceblue;
         }
     </style>
-
 </head>
 <body>
-    
-        <header>
-            <h1>CONTACT US</h1>
+    <header>
+        <div class="web-logo">
+            <img src="info-website.png" alt="website-logo" width="35px" height="35px">
+        </div>
+        <div class="menu">
+            <ul>
+                <li id="about"><a href="Website Introduction.html">About Us</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="social-networks">
+            <ul>
+                <li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-github"></i></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+    <section>
+        <h1>This website is created to make fun stuffs!</h1>
+        <p>Here are 2 members who contributes for the website:</p>
+        <br>
+        <br>
+        <div class="info">
+            <div class="khanh-info">
+                <div class="khanh-basic-info">
+                <img src="khanh.jpg" alt="khanh-image" width="350" height="350" style="border-radius: 80px;">
+                <br>
+                <pre>
+Tên: Giáp Đăng Khánh
+Sinh năm:**/**/2006
+Quê quán: Bắc Giang
+Sở thích:Nghe nhạc
+                </pre>
+                </div>
+                <div class="khanh-introduction">
+                    <pre>
+- I don't know what my dream job is 
+
+- I'm pretty bad at Physics
+
+- Programming is not a thing that I "addicted" to , but that's fine
+
+- My concentration is kinda low
+
+- I don't study IELTS, but the result in the last time when I
+took the entrance IELTS exam was ~ 4.5 :((
+                    </pre>
+                </div>
+            </div>
+            <div class="han-info">
+                <div class="han-basic-info">
+                <img src="han.jpg" alt="han-image" width="350" height="350" style="border-radius: 80px;">
+                <br>
+                <pre>
+Tên: Tạ Bảo Hân
+Sinh năm:**/**/2006
+Quê quán: Bắc Giang
+                </pre>
+                </div>
+                <div class="han-introduction">
+                    <pre>
+
+
+- Who knows that
+
+- I don't know
+
+- You like to play Genshin Impact ???                        
+
+
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </section>
+        <aside>
+            <h2>Our projects</h2>
             <hr>
-        </header>
-    <div class="content-container">
-        <div class="content">
-            <div class="contact_info">
-                <h1>Contact Info</h1>
-                <ul>
-                    <li><i class="fa fa-map-marker"></i> Bac Giang, Vietnam 2023</li>
-                    <li><i class="fa fa-envelope"></i> info@companyname.com</li>
-                    <li><i class="fa fa-phone"></i> None</li>
-                </ul>
-            </div>
+            <ul>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+                <li>Project 3</li>
+                <li>Project 3</li>
+                <li>Project 3</li>
+                <li>Project 3</li>
+                <li>Project 3</li>
+                <li>Project 3</li>
+                <li>Project 3</li>
+                <li>Project 3</li>
+            </ul>
+        </aside>
         </div>
-        <div class="content"> 
-            <div class="user-info">
-                <h1>Your Information </h1>
-                <form>
-                    <ul>
-                        <li><input type="text" id="user_name" placeholder="Your Name"></li>
-                        <li><input type="email" id="user_email" placeholder="Your Email"></li>
-                        <li><input type="text" id="subject" placeholder="Subject"></li>
-                        <li><p><textarea id="user_message" cols="50" rows="10" placeholder="Message"></textarea></p></li>
-                        <li><input type="submit" id="submit_button"></li>
-                    </ul>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
 </body>
 </html>
