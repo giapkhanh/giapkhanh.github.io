@@ -2,253 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to our website!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Khanh's Website</title>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
         body {
-            background:url("https://img.freepik.com/premium-photo/cherry-blossom-background-with-beautiful-flower-high-quality_770022-100.jpg?w=2000");
-            background-size:100cm 100cm;
-            background-repeat:no-repeat;
-            font-family: Arial, Helvetica, sans-serif;
-            display: grid;
+            margin: 3%;
         }
-        body h1,p {
+
+        /* nav bar */
+        nav {
+     
+        }
+    
+        nav ul {
+            display: grid;
+            grid-template-columns: auto auto auto;
             text-align: center;
+            background-color: black;
+            height: 1.5cm;
         }
-        .container {
-            display: flex;
-        }
-        header {
-            max-width:50cm;
-            display:grid;
-            background-color: #333;
-            grid-auto-flow: column;
-            color: aliceblue;
-        }
-        header .web-logo img {
-            float: left;
-            border: 3px solid pink;
-            border-radius: 50px;
-        }
-        header .menu ul {
-            grid-auto-flow: column;
-            display: grid;
+        nav ul li {
             list-style-type: none;
+            margin-top: 3%;
         }
-        header .social-networks ul {
-            display: grid;
-            list-style-type: none;
-            grid-auto-flow: column;
-        }
-        section {
-            flex: 5;
-            font-family: Arial, Helvetica, sans-serif;
-            height: 20cm;
-            display: grid;
-        }
-        .info {
-            flex: 5;
-            display:grid;
-            grid-template-columns:auto;
-        }
-        .info .khanh-info {
-            background-size:auto;
-            width: fit-content;
-            margin: 1cm;
-            display: flex;
-        }
-        .info .khanh-info .khanh-basic-info {
-            background-color: antiquewhite;
-            text-align: center;
-            border-radius: 80px;
-        }
-        .info .khanh-info .khanh-basic-info {
-            flex: 2;
-        }
-        .info .khanh-info .khanh-introduction {
-            flex: 3;
-            margin-left: 1cm;
-            margin-top: 2cm;
-        }
-        .info .khanh-info .khanh-introduction pre {
-            background-color:lightpink;
-            border-radius: 20px;
-            font-size: larger;
-            font-style: oblique;
-        }
-        .info .other-info {
-            background-size:auto;
-            width: fit-content;
-            margin: 1cm;
-            display: flex;
-        }
-        .info .other-info .other-basic-info {
-            background-color: antiquewhite;
-            border-radius: 80px;
-        }
-        .info .other-info .other-basic-info pre {
-            flex: 2;
-            text-align: center;
-        }
-        .info .other-info .other-introduction {
-            flex: 3;
-            margin-left: 1cm;
-        }
-        .info .other-info .other-introduction pre {
-            margin-top: 2cm;
-            background-color: lightpink;
-            border-radius: 20px;
-            width: 15cm;
-            height: 6cm;
-            font-size: larger;
-            font-style: oblique;
-        }
-        aside {
-            flex: 2;
-            float: right;
-            margin-left: 0;
-            background-color: #222;
-            color: aliceblue;
-            border-radius: 20px;
-        }
-        aside h2 {
-            text-align: center;
-        }
-        aside ul {
-            list-style-type: none;
-            display: grid;
-        }
-        aside ul li {
-            margin: 0.3cm;
-        }
-        a {
+        ul li a {
             text-decoration: none;
-            color: aliceblue;
+            color:aliceblue;
         }
+
+        /* end nav bar */
+    
+        /* about me */
+        .about-me {
+            margin: 5%;
+            display: grid;
+            grid-template-columns: 30% auto ;
+        }
+
+        img[id="myself"] {
+            width: 5cm;
+            height: 5cm;
+        }
+        .about-me .my-info {
+            margin-left: 25%;
+        }
+        /* end about me */
     </style>
 </head>
+
+
 <body>
     <header>
-        <div class="web-logo">
-            <img src="info-website.png" alt="website-logo" width="35px" height="35px">
-        </div>
-        <div class="menu">
-            <ul>
-                <li id="about"><a href="index.html">About Us</a></li>
-                <li id="contact"><a href="web-contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="social-networks">
-            <ul>
-                <li><i class="fa fa-facebook"></i></li>
-                <li><i class="fa fa-github"></i></li>
-            </ul>
-        </div>
+
     </header>
-    <div class="container">
+
+    <!-- menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="docs.html">Docs</a></li>
+            <li><a href="#">Blogs</a></li>
+        </ul>
+    </nav>
     <section>
-        <h1>This website is created to make fun stuffs!</h1>
-        <p>Here are 2 members who contributes for the website:</p>
-        <br>
-        <br>
-        <div class="info">
-            <div class="khanh-info">
-                <div class="khanh-basic-info">
-                <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/335408216_635796555025581_4343300014762031012_n.jpg?stp=dst-jpg_p75x225&_nc_cat=111&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=k-m58ZCBltAAX_23KWD&_nc_ht=scontent.fhan2-3.fna&oh=00_AfCU66_f5uA9uBwhuDzV95LXJV5GACOWs0k8Lgk-Ieq1EA&oe=6468D4EE" alt="khanh-image" width="350" height="350" style="border-radius: 80px;">
-                <br>
-                <pre>
-Tên: Giáp Đăng Khánh
-Sinh năm:**/**/2006
-Quê quán: Bắc Giang
-Sở thích:Nghe nhạc
-                </pre>
-                </div>
-                <div class="khanh-introduction">
-                    <pre>
-- I don't know what my dream job is 
-
-- I'm pretty bad at Physics
-
-- Programming is not a thing that I "addicted" to , but that's fine
-
-- My concentration is kinda low
-
-- I don't study IELTS, but the result in the last time when I
-took the entrance IELTS exam was ~ 4.5 :((
-                    </pre>
-                </div>
+        <!-- about me -->
+        <div class="about-me">
+            <div class="my-img">    
+                <img id="myself" src="avt.jpg" alt="ảnh chụp">
             </div>
-            <div class="other-info">
-                <div class="other-basic-info">
-                <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/338859203_887323339007214_4467622561588413462_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=jZhZsKRd0JkAX8gbWKi&_nc_ht=scontent.fhan14-1.fna&oh=00_AfCUMwXQjlfcagSQuMlYUm6n_5Nag3jAC_LIL3ql_al2Tg&oe=646663A4" alt="han-image" width="350" height="350" style="border-radius: 80px;">
-                <br>
-                <pre>
-Tên: Trần Nhật Minh
-Sinh năm:**/**/2006
-Quê quán: Bắc Giang
-                </pre>
-                </div>
-                <div class="other-introduction">
-                    <pre>
-
-
-- Who knows that
-
-- I don't know
-
-- You like to play League of Lengends ???                        
-
-
-                    </pre>
-                </div>
+            <div class="my-info">
+                <p>Tên: Giáp Đăng Khánh</p>
+                <p>Sinh viên KMA</p>
+                <p>2k6</p>
             </div>
-            <div class="other-info">
-                <div class="other-basic-info">
-                <img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/285664991_548454916740360_642995394381603330_n.jpg?stp=dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=n7Lg8FTGjFgAX9y0Xqn&_nc_ht=scontent.fhan2-5.fna&oh=00_AfDfLt9c9MIv8CYbEYi4VJ2coxP5Y1DyWDdna_Nb1UFFHw&oe=6469235E" alt="han-image" width="350" height="350" style="border-radius: 80px;">
-                <br>
-                <pre>
-Tên: Tạ Bảo Hân
-Sinh năm:**/**/2006
-Quê quán: Bắc Giang
-                </pre>
-                </div>
-                <div class="other-introduction">
-                    <pre>
+        </div>
+        <!-- end about me -->
 
-
-- Don't know what to say about u
-
-- You like to play Genshin Impact ???                        
-
-
-                    </pre>
-                </div>
-            </div>
+        <!-- docs -->
+        <div class="docs">
+            <h1>Docs</h1>
+            <p>Share tài liệu :D</p>
+            <p>You can find them on Docs</p>
+            <p>Định post nhưng file nặng quá ko cho lên github được, để sau</p>
+        </div>
+        <!-- end docs -->
+        <div class="blogs">
+            <h1>Blogs</h1>
+            <p>Định làm để post vài thứ linh tinh, chưa biết post gì</p>
         </div>
     </section>
-        <aside>
-            <h2>Our projects</h2>
-            <hr>
-            <ul>
-                <li>Project 1</li>
-                <li>Project 2</li>
-                <li>Project 3</li>
-                <li>Project 4</li>
-                <li>Project 5</li>
-                <li>Project 6</li>
-                <li>Project 7</li>
-                <li>Project 8</li>
-                <li>Project 9</li>
-                <li>Project 10</li>
-                <li>Project 11</li>
-            </ul>
-        </aside>
-        </div>
 </body>
 </html>
