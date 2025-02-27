@@ -2,12 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TailieuFree</title>
+    <title>Contact Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 1cm;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            color: #555;
+        }
+        .content-container {
+            display: grid;
+        }
+        .content-container h1 {
+            font-size:25px;
+        }
+        
+        header {
+            margin-bottom: 2cm;
+        }
+        header hr {
+            height: 0.1cm;
+            width: 1cm;
+            background-color: #fcc152;
+            border: none;
+        }
+        .contact_info {
+            width: 8cm;
+        }
+        .contact_info ul li {
+            color: grey;
+            list-style-type: none;
+            margin-bottom: 1cm;
+        }
+        .user-info {
+            display: grid;
+            max-width: 16cm;
+        }
+        .user-info ul li {
+            display: grid;
+            list-style-type: none;
+            margin-bottom: 0.2cm;
+            border-color: lightslategrey;
+        }
+        .user-info ul li #user_name,#user_email,#subject {
+            height: 1cm;
+            max-width: 16cm;
+        }
+        #submit_button {
+            width: 2cm;
+            height: 1cm;
+            background-color: green;
+            border: none;
+            color: white;
+        }
+        #submit_button:hover {
+            background-color: lightgreen;
+        }
+    </style>
+
 </head>
 <body>
-    <a href="E:\giapkhanh.github.io\khoahoc\khoahoc_toeic">Khoa hoc Toeic</a>
-    <p></p>
-    <a href="E:\giapkhanh.github.io\khoahoc\khoahoc_ielts">Khoa hoc IELTS</a>
+    
+        <header>
+            <h1>CONTACT US</h1>
+            <hr>
+        </header>
+    <div class="content-container">
+        <div class="content">
+            <div class="contact_info">
+                <h1>Contact Info</h1>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> Bac Giang, Vietnam 2023</li>
+                    <li><i class="fa fa-envelope"></i> info@companyname.com</li>
+                    <li><i class="fa fa-phone"></i> None</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content"> 
+            <div class="user-info">
+                <h1>Your Information </h1>
+                <form>
+                    <ul>
+                        <li><input type="text" id="user_name" placeholder="Your Name"></li>
+                        <li><input type="email" id="user_email" placeholder="Your Email"></li>
+                        <li><input type="text" id="subject" placeholder="Subject"></li>
+                        <li><p><textarea id="user_message" cols="50" rows="10" placeholder="Message"></textarea></p></li>
+                        <li><a href="https://www.facebook.com/"><input type="submit" id="submit_button"></a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 </body>
-</html>
